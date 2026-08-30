@@ -27,7 +27,7 @@ Loop through each word in `wordDict`. If `s` contains the word, delete it from `
 
 ### Core Intuition
 Instead of mutating the string, we test valid prefixes incrementally:
-> *"If the prefix $s[0 \dots j-1]$ can be segmented into valid words, and the substring $s[j \dots i-1]$ is in the dictionary, then the prefix $s[0 \dots i-1]$ is also valid."*
+> *"If the prefix s[0...j-1] can be segmented into valid words, and the substring s[j...i-1] is in the dictionary, then the prefix s[0...i-1] is also valid."*
 
 ### Why DP is Better
 * **Preserves Original Order:** Substring boundaries are checked in place using indices without altering the original string.
